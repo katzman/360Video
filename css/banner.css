@@ -1,0 +1,373 @@
+body, body *
+{
+	vertical-align: baseline;
+	border:         0;
+	outline:        0;
+	padding:        0;
+	margin:         0;
+}
+
+.divTransition
+{
+	transition:         .5s;
+	-webkit-transition: .5s;
+}
+
+#adContainer
+{
+	position:         absolute;
+
+	width:            100%;
+	height:           100%;
+
+	margin:           0 auto;
+
+	background-color: #333333;
+}
+
+#content
+{
+	position: relative;
+
+	width:    1260px;
+	height:   100%;
+
+	margin:   0 auto;
+}
+
+#VRVideoTarget
+{
+	position: absolute;
+
+	width:    1260px;
+	height:   630px;
+
+	top:      160px;
+	left:     0px;
+}
+
+#timeCode
+{
+	position:              absolute;
+	display:               block;
+	visibility:            visible;
+
+	width:                 140px;
+	height:                26px;
+
+	top:                   166px;
+	right:                 4px;
+	color: 				white;
+
+	font-size: 24px;
+	font-family: Arial, Verdana, sans-serif;
+
+	text-align: center;
+	vertical-align: middle;
+
+	-moz-border-radius:    8px;
+	-webkit-border-radius: 8px;
+	border-radius:         8px;
+
+	background-color:      rgba(0, 0, 0, .5);
+}
+
+#logo
+{
+	position:          absolute;
+
+	width:             57px;
+	height:            50px;
+
+	top:               30px;
+	left:              601px;
+
+	background:        url(../p4-aprvl1.png);
+	background-repeat: no-repeat;
+}
+
+/*.circle*/
+/*{*/
+/*width: 20px;*/
+/*height: 20px;*/
+/*background: red;*/
+/*-moz-border-radius: 10px;*/
+/*-webkit-border-radius: 10px;*/
+/*border-radius: 10px;*/
+/*}*/
+
+.controls
+{
+	position:              absolute;
+	display:               block;
+	visibility:            visible;
+
+	width:                 240px;
+	height:                26px;
+
+	top:                   760px;
+	right:                 4px;
+
+	-moz-border-radius:    8px;
+	-webkit-border-radius: 8px;
+	border-radius:         8px;
+
+	background-color:      rgba(0, 0, 0, .5);
+
+	z-index: 1000;
+}
+
+.showControls
+{
+	opacity: 1;
+}
+
+.hideControls
+{
+	opacity: 0;
+}
+
+/*.circle*/
+/*{*/
+/*position:              absolute;*/
+
+/*border-radius:         50%;*/
+/*-moz-border-radius:    50%;*/
+/*-webkit-border-radius: 50%;*/
+
+/*width:                 inherit;*/
+/*height:                inherit;*/
+
+/*background-color: rgba( 0, 0, 0, .5 );*/
+/*}*/
+
+/*#controls_playPause*/
+/*{*/
+/*position:         absolute;*/
+/*width:            12px;*/
+/*height:           14px;*/
+
+/*left:             8px;*/
+/*top:              6px;*/
+
+/*fill:             white;*/
+
+/*background-color: transparent;*/
+/*}*/
+
+/*#controls_playPause:hover*/
+/*{*/
+/*fill: #ff1703;*/
+/*}*/
+
+.playBtnSVG
+{
+	position: absolute;
+	left:     8px;
+	top:      7px;
+
+	width:    12px;
+	height:   12px;
+}
+
+.pauseBtnSVG
+{
+	position: absolute;
+	left:     7px;
+	top:      7px;
+
+	width:    12px;
+	height:   12px;
+}
+
+.audioOnBtnSVG, .audioOffBtnSVG
+{
+	position: absolute;
+	overflow: hidden;
+
+	left:     6px;
+	top:      7px;
+
+	width:    14px;
+	height:   16px;
+}
+
+.controls_playPause
+{
+	position: absolute;
+	overflow: hidden;
+	display:  block;
+
+	right:    40px;
+	bottom:   0px;
+
+	width:    26px;
+	height:   26px;
+
+	fill:     white;
+}
+
+.controls_playPause .playBtnSVG
+{
+	display: block;
+}
+
+.controls_playPause .pauseBtnSVG
+{
+	display: none;
+}
+
+.controls_playPause_paused .playBtnSVG
+{
+	display: none;
+}
+
+.controls_playPause_paused .pauseBtnSVG
+{
+	display: block;
+}
+
+.controls_playPause:hover,
+.controls_audio_unmuted:hover
+{
+	fill: #b35e3a;
+}
+
+.controls_audio_unmuted
+{
+	position: absolute;
+	overflow: visible;
+	display:  block;
+
+	right:            10px;
+	bottom:           0px;
+
+	width:    26px;
+	height:   26px;
+
+	fill:     white;
+}
+
+.controls_audio_unmuted .audioOnBtnSVG
+{
+	display: block;
+}
+
+.controls_audio_unmuted .audioOffBtnSVG
+{
+	display: none;
+}
+
+.controls_audio_muted .audioOnBtnSVG
+{
+	display: none !important;
+}
+
+.controls_audio_muted .audioOffBtnSVG
+{
+	display: block !important;
+}
+
+.controls_progress
+{
+	position: absolute;
+	overflow: visible;
+	display:  block;
+
+	width:    156px;
+	height:   20px;
+
+	left:     6px;
+	bottom:   10px;
+}
+
+.progressBG
+{
+	position:         absolute;
+	overflow:         visible;
+	display:          block;
+	pointer-events:   none;
+
+	width:            inherit;
+	height:           6px;
+
+	left:             0;
+	bottom:           0;
+
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.controls_progressBar
+{
+	position:         absolute;
+	pointer-events:   none;
+	width:            0;
+	height:           6px;
+
+	left:             0;
+	bottom:           0;
+
+	background-color: #b35e3a;
+}
+
+.controls_loadBar
+{
+	position:         absolute;
+	pointer-events:   none;
+	width:            0;
+	height:           6px;
+
+	left:             0;
+	bottom:           0;
+
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.controls_slider
+{
+	position:         absolute;
+
+	width:            22px;
+	height:           30px;
+
+	left:             0;
+	top:              -5px;
+	opacity:          0;
+
+	background-color: transparent;
+}
+
+#controls_audio
+{
+	position:         absolute;
+	overflow:         hidden;
+
+	width:            14px;
+	height:           14px;
+
+	right:            10px;
+	bottom:           0px;
+
+	fill:             white;
+	background-color: transparent;
+	clip:             rect(0px, 14px, 14px, 0px);
+}
+
+/*#controls_audio:hover*/
+/*{*/
+/*fill: #ff1703;*/
+/*}*/
+
+/*#controls_audio.controls_audio_muted*/
+/*{*/
+/*clip: rect(0px, 8px, 14px, 0px) !important;*/
+/*}*/
+
+/*.audioBtnSVG*/
+/*{*/
+/*position: absolute;*/
+/*overflow: hidden;*/
+
+/*width:    14px;*/
+/*height:   14px;*/
+/*}*/

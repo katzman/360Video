@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/banner.css">
+
+		<script src="js/three.js"></script>
+
+		<!--<script src="js/core.js"></script>-->
+
+		<script src="js/Constants.js"></script>
+		<script src="js/NotificationManager.js"></script>
+		<script src="js/MouseManager.js"></script>
+		<script src="js/ProgressEventManager.js"></script>
+		<script src="js/VideoComponent.js"></script>
+		<script src="js/VideoControls.js"></script>
+		<script src="js/Utils.js"></script>
+		<script src="js/AnimationFrameUtil.js"></script>
+
+		<script src="js/MobileDetectMovement.js"></script>
+		<script src="js/VRVideoComponent.js"></script>
+
+		<script src="js/SVGLib.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+
+	<body>
+		<div id="adContainer">
+			<div id="content">
+				<div id="videoComponent">
+
+					<video id="video" width="3200px" height="1600px" style="display:none">
+						Your browser does not support the video tag.
+					</video>
+
+					<div id="VRVideoTarget" style="display: block"></div>
+					<div id="timeCode">00:00:00:00</div>
+					<div id="hotSpots"></div>
+
+					<div id="user_controls" class="controls divTransition">
+						<div id="user_playPause" class="controls_playPause divTransition">
+							<div id="user_playBtn_svg" class="playBtnSVG"></div>
+							<div id="user_pauseBtn_svg" class="pauseBtnSVG"></div>
+						</div>
+						<div id="user_audio" class="controls_audio_unmuted divTransition">
+							<div id="user_audio_on_svg" class="audioOnBtnSVG"></div>
+							<div id="user_audio_off_svg" class="audioOffBtnSVG"></div>
+						</div>
+
+						<div id="user_progress" class="controls_progress">
+							<div id="user_progressBG" class="progressBG"></div>
+							<div id="user_loadBar" class="controls_loadBar"></div>
+							<div id="user_progressBar" class="controls_progressBar"></div>
+							<div id="user_slider" class="controls_slider"></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="logo"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+	</body>
+</html>
